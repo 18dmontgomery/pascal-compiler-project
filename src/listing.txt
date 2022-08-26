@@ -1,0 +1,89 @@
+1.    program test (input, output);
+ 
+2.     var a : integer;
+ 
+3.     var b : real;
+ 
+4.     var c : array [1..2] of integer;
+ 
+5.     var d : real;
+ 
+6.     function fun1(x:integer; y:real;
+ 
+7.                     z:array [1..2] of integer;
+ 
+8.                     q: real) : integer;
+ 
+9.       var d: integer;
+ 
+10.       begin
+ 
+11.         a := 2;
+ 
+12.         z[a] := 4;
+ 
+13.         c[2] := 3;
+ 
+14.         fun1 := c[1]
+ 
+15.        end;
+ 
+16.      function fun2(x: integer; y: integer) : real;
+ 
+17.        var e: real;
+ 
+18.        var f: integer;
+ 
+19.        function fun3(n: integer; z: real) : integer;
+ 
+20.          var e: integer;
+ 
+21.          begin
+ 
+22.            a:= e;
+ 
+23.            e:= c[e];
+ 
+24.            fun3 := 3
+ 
+25.          end;
+ 
+26.        begin
+ 
+27.          a:= fun1(x, e, c, b);
+ 
+28.          x:= fun3(c[1], e);
+ 
+29.          e := e + 4;
+ SEMERR: Cannot complete addop func on different types
+
+30.          a:= (a mod 4.4) div 4.4;
+ SEMERR: Cannot complete mathematical operations with different types
+
+31.          while ((a >= 4.4) and ((b <= e)
+ SEMERR: Unable to compare different types
+
+32.                          or (not (a = c[a])))) do
+ 
+33.            begin
+ 
+34.              a:= c + 0
+ SEMERR: Array format incorrect. Need to follow the strucutre ArrayID[integer] 
+35.            end;
+ SEMERR: Cannot complete addop func on different types
+
+36.          fun2 := 2.5
+ 
+37.        end;
+ 
+38.    begin
+ 
+39.      b:= fun2(c[4], c[5]);
+ 
+40.      b:= fun2(c[4], 2);
+ 
+41.      if(a < 2) then a := 1 else a:= a+2;
+ 
+42.      if(b > 4.2) then a:= c[a]
+ 
+43.    end. 

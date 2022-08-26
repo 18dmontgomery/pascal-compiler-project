@@ -1,0 +1,8 @@
+a	loc0
+b	loc4
+c	loc12
+d	loc20
+d	loc0
+e	loc0
+f	loc8
+e	loc0
