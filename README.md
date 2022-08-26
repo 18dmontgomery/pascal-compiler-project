@@ -9,4 +9,4 @@ For this project, I created a syntax analyzer that utilized the code we wrote in
 For project 3, I decorated our grammar to give the language the ability to do type checking and scope checking. This was done by creating a semantic analyzer that used the lex tokens developed in the first project, a decorated parse tree, and multiple error handling functions. We were asked to follow the standard scope checking rules for pascal and complete type checking. For project 4, I was asked to compute memory addresses for local variables in the scope. The memory addresses were dependent on the variable type and size.
 
 ## Want more details?
-I created a document for each project, explaing what the tasks were and how I went about completing each. These can be found here: 
+I created a document for each project, explaing what the tasks were and how I went about completing each. These can be found in the documentation folder.
